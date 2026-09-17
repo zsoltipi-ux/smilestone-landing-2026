@@ -4,8 +4,8 @@
 const { test, expect } = require('@playwright/test');
 
 const PAGES = [
-  { lang: 'hu', path: '/', pricing: '#arak', priceAt: { 75: '25 000 Ft', 150: '47 500 Ft', 300: '82 500 Ft' }, ask: 'mennyibe kerül', askHit: '25 000 Ft', askEn: false },
-  { lang: 'en', path: '/en/', pricing: '#pricing', priceAt: { 75: '€ 70', 150: '€ 145', 300: '€ 261' }, ask: 'how much does it cost', askHit: '€ 70', askEn: true },
+  { lang: 'hu', path: './', urlEnd: '/', pricing: '#arak', priceAt: { 75: '25 000 Ft', 150: '47 500 Ft', 300: '82 500 Ft' }, ask: 'mennyibe kerül', askHit: '25 000 Ft', askEn: false },
+  { lang: 'en', path: 'en/', urlEnd: '/en/', pricing: '#pricing', priceAt: { 75: '€ 70', 150: '€ 145', 300: '€ 261' }, ask: 'how much does it cost', askHit: '€ 70', askEn: true },
 ];
 
 const cssReady = (page) => page.waitForFunction(() => [...document.styleSheets].some(s => s.href && s.href.includes('style.css') && s.cssRules.length > 50) && document.fonts.status === 'loaded');
@@ -96,7 +96,7 @@ for (const P of PAGES) {
       let dialog = null; page.on('dialog', d => { dialog = d.message(); d.dismiss(); });
       await page.locator('#form button[type=submit]').click();
       expect(dialog).toBeTruthy();
-      expect(page.url()).toContain(P.path);
+      expect(new URL(page.url()).pathname.endsWith(P.urlEnd)).toBe(true);
     });
 
     test.describe('ask widget', () => {

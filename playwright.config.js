@@ -5,7 +5,7 @@ module.exports = defineConfig({
   timeout: 30_000,
   fullyParallel: true,
   reporter: [['list']],
-  use: { baseURL: 'http://127.0.0.1:4173', trace: 'retain-on-failure' },
+  use: { baseURL: 'http://127.0.0.1:4173/', trace: 'retain-on-failure' },
   webServer: { command: 'node tests/server.mjs', port: 4173, reuseExistingServer: true, timeout: 10_000 },
   projects: [
     { name: 'phone-360', use: { ...devices['Galaxy S9+'], viewport: { width: 360, height: 780 } } },
