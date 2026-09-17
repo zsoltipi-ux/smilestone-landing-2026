@@ -41,8 +41,13 @@ section{padding:96px 0}
 .nav{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
 .nav.scrolled{border-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;height:74px}
-.logo img{height:40px;width:auto}
-.nav-links{display:flex;gap:28px;font-weight:700;font-size:15px;color:var(--navy)}
+.logo{flex:0 0 auto;display:inline-flex}
+.logo img{height:40px;width:auto;max-width:none;object-fit:contain}
+.nav-links{display:flex;gap:18px;font-weight:700;font-size:15px;color:var(--navy);flex-wrap:nowrap;white-space:nowrap}
+.nav-cta .btn-ghost{border-color:transparent;padding:0 12px;background:transparent}
+.nav-cta .btn-ghost:hover{border-color:var(--line)}
+.nav .wrap{gap:14px}
+@media(max-width:1280px){.nav-links{gap:14px;font-size:14px}.nav-cta .btn{padding:0 16px;min-height:46px;font-size:15px}}
 .nav-links a{position:relative;padding:6px 0}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--blue);transition:width .2s}
 .nav-links a:hover::after{width:100%}
@@ -279,7 +284,7 @@ footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
 footer.site h5{color:#fff;font-family:var(--body);font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
 footer.site a{display:block;padding:5px 0;font-size:15px}
 footer.site a:hover{color:#fff}
-footer.site .logo img{height:36px;margin-bottom:14px}
+footer.site .logo img{height:36px;width:auto;max-width:none;margin-bottom:14px}
 footer.site .bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px}
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none;gap:10px}
 .sticky-cta .btn{flex:1;min-height:48px}
