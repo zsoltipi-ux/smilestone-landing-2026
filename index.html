@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmileStone — Fogtechnikai labor-ERP: munkalaptól az elszámolásig</title>
+<meta name="description" content="Munkalap, munkafázis, tagbér, szállítólevél és hó végi elszámolás egy rendszerben. A fogorvosaid ingyen kapcsolódnak. Közel 10 év, 2 700+ felhasználó, 110 000+ megrendelés.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo-fav.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SmileStone"><img src="assets/img/logo-all.png" alt="SmileStone" width="260" height="45"></a>
+    <nav class="nav-links" aria-label="Fő menü">
+      <a href="#hogyan">Működés</a>
+      <a href="#funkciok">Funkciók</a>
+      <a href="#fogorvos">Fogorvosoknak</a>
+      <a href="#arak">Árak</a>
+      <a href="#gyik">GYIK</a>
+      <a href="#kapcsolat">Kapcsolat</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang"><a class="on" href="./">HU</a><a href="en/">EN</a></div>
+      <a class="btn btn-ghost" href="https://smilestone.hu/login">Bejelentkezés</a>
+      <a class="btn btn-primary" href="https://smilestone.hu/register">Kipróbálom ingyen</a>
+      <button class="burger" aria-label="Menü" aria-expanded="false" id="burger"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hogyan">Hogyan működik</a>
+    <a href="#funkciok">Funkciók</a>
+    <a href="#fogorvos">Fogorvosoknak</a>
+    <a href="#arak">Árak</a>
+    <a href="#gyik">GYIK</a>
+    <a href="#kapcsolat">Kapcsolat</a>
+    <div class="row">
+      <a class="btn btn-ghost" href="https://smilestone.hu/login">Bejelentkezés</a>
+      <a class="btn btn-ghost" href="en/">English</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow reveal d1">Fogtechnikai labor-ERP · közel 10 éve</span>
+      <h1 class="reveal d2">A labor, ahol <em>semmit nem kell kétszer</em> leírni.</h1>
+      <p class="lead reveal d3">Munkalap, munkafázis, tagbér, szállítólevél és hó végi elszámolás egy rendszerben. A fogorvosaid ingyen kapcsolódnak, a papírt lefotózod és csatolod — a többit a SmileStone viszi.</p>
+      <div class="cta reveal d4">
+        <a class="btn btn-primary" href="https://smilestone.hu/register">Kipróbálom ingyen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#kapcsolat">Online bemutatót kérek</a>
+      </div>
+      <p class="fine reveal d4">Kártyaszám nélkül · korlátlan felhasználó · a beállítást mi csináljuk meg veled</p>
+      <div class="proof reveal d5">
+        <div><b>110 000+</b><span>megrendelés ment át a rendszeren</span></div>
+        <div><b>2 700+</b><span>fogtechnikus és fogorvos használja</span></div>
+        <div><b>~10 év</b><span>fogtechnikai laborokkal építve</span></div>
+      </div>
+    </div>
+
+    <div class="stage reveal d3" aria-hidden="true">
+      <div class="paper-sheet"></div>
+      <div class="card card-main">
+        <div class="card-head">
+          <div class="id">#2026-0917-014<small>Dr. Kovács · Páciens: K. A. · Leadás: 09-24</small></div>
+          <span class="chip blue">Gyártásban</span>
+        </div>
+        <div class="card-body">
+          <div class="row2">
+            <div class="kv">Munka<b>Fémkerámia híd 14–16</b></div>
+            <div class="kv">Fogszín<b>A2 · nyaki A3</b></div>
+          </div>
+          <div class="teeth">
+            <i>18</i><i>17</i><i class="on">16</i><i class="bridge">15</i><i class="on">14</i><i>13</i><i>12</i><i>11</i><i>21</i><i>22</i><i>23</i><i>24</i><i>25</i><i>26</i><i>27</i><i>28</i>
+          </div>
+          <div class="phases">
+            <div class="ph done"><span class="dot"></span><span>Mintakészítés</span><span class="who">Gábor · 09-18</span></div>
+            <div class="ph done"><span class="dot"></span><span>Fémváz</span><span class="who">Gábor · 09-19</span></div>
+            <div class="ph now"><span class="dot"></span><span>Kerámia leplezés</span><span class="who">Eszter · ma</span></div>
+            <div class="ph todo"><span class="dot"></span><span>Fényezés, leadás</span><span class="who">09-24</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <div>Munkadíj<br><b>58 400 Ft</b></div>
+          <div style="text-align:right;font-size:12px;opacity:.85">Szállítólevél →<br>számlázható</div>
+          <div class="qr"></div>
+        </div>
+      </div>
+      <div class="card card-mini">
+        <div class="t">Szeptember · elszámolás</div>
+        <div class="sum">1 284 300 Ft</div>
+        <div class="bar"><i style="width:46%;background:var(--blue)"></i><i style="width:31%;background:var(--blue-light)"></i><i style="width:23%;background:#B9D9EA"></i></div>
+        <div class="legend"><span><i style="background:var(--blue)"></i>Dr. Kovács</span><span><i style="background:var(--blue-light)"></i>Dr. Szabó</span><span><i style="background:#B9D9EA"></i>Többi</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain" id="ismeros">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Ismerős?</span>
+        <h2>Három dolog, amit minden laborvezető ismer.</h2>
+      </div>
+      <p>Nem a munka a nehéz. Az, ami körülötte van: a füzet, a hívások, a hó vége.</p>
+    </div>
+    <div class="pain-grid">
+      <article class="pain-card io">
+        <span class="n">01</span>
+        <div class="q">A munkalap papíron van — vagy Excelben, vagy a fejedben.</div>
+        <p>Ugyanazt kétszer írod le: egyszer a lapra, egyszer a hó végi táblázatba. Ha egy lap elveszik, a munka is.</p>
+        <div class="a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>A papírt lefotózod és csatolod. Egyszer viszed fel, onnantól minden ebből számolódik.</span></div>
+      </article>
+      <article class="pain-card io">
+        <span class="n">02</span>
+        <div class="q">„Hol tart a hidam?” — csörög a telefon, te meg a mikroszkópnál ülsz.</div>
+        <p>A fogorvos nem lát bele a laborba, ezért kérdez. Te meg keresed a lapot, hívod a kollégát.</p>
+        <div class="a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>A fogorvos a saját ingyenes felületén látja a státuszt, a fotókat és a leadási napot. Nem hív, mert nem kell.</span></div>
+      </article>
+      <article class="pain-card io">
+        <span class="n">03</span>
+        <div class="q">Hó végén két napig számolsz — orvosonként, munkánként, tagbért.</div>
+        <p>Ami elmaradt, azt már nem találod. Ami dupla, azt a fogorvos találja meg.</p>
+        <div class="a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>A szállítólevél lezárja a munkát és számlázhatóra állítja. A hó végi elszámolás és a tagbér egy gombnyomás.</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="hogyan">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Hogyan működik</span>
+        <h2>Három lépés, ami a laborban amúgy is megtörténik.</h2>
+      </div>
+      <p>Nem találtuk fel a spanyolviaszt. A már működő folyamatot tettük átláthatóvá — laborokkal együtt, közel tíz éve.</p>
+    </div>
+    <div class="flow-grid">
+      <article class="step io">
+        <span class="num">1</span>
+        <h3>A megrendelés bejön</h3>
+        <p>Akárhonnan: a fogorvos leadja a saját felületén, te felviszed, vagy feltöltöd a szkenner e-mailjéből jött PDF-et, és a rendszer kiolvassa az adatokat.</p>
+        <ul>
+          <li>Fogorvos-portál — ingyen, korlátlan</li>
+          <li>Zsigmondy-kereszt, fogszín, határidő, megjegyzés</li>
+          <li>STL, PLY, exocad tervek, fotók a munkalapon</li>
+        </ul>
+        <span class="tag">nincs több félreértés a telefonban</span>
+      </article>
+      <article class="step io">
+        <span class="num">2</span>
+        <h3>A labor gyárt</h3>
+        <p>A munkafázisokat a termékhez rendeled, a kollégákra delegálod. Minden státuszváltás időbélyeggel — telefonról, QR-kódról is.</p>
+        <ul>
+          <li>Munkafázisok, delegálás, terminusok</li>
+          <li>Technikusi megjegyzés, amit az orvos nem lát</li>
+          <li>QR-kód a lapon → a munkalap a telefonon</li>
+        </ul>
+        <span class="tag">mindenki tudja, mi a következő</span>
+      </article>
+      <article class="step io">
+        <span class="num">3</span>
+        <h3>Elszámolsz — egy gombbal</h3>
+        <p>A szállítólevél csak befejezett munkára készül, és automatikusan számlázhatóra állítja. Hó végén szűrsz, és kész az elszámolás orvosonként, a tagbér kollégánként.</p>
+        <ul>
+          <li>Hó végi és hó közbeni elszámolás</li>
+          <li>Tagbér fázisonként, termékenként, %-osan</li>
+          <li>NAV-kompatibilis e-számlázás igény szerint</li>
+        </ul>
+        <span class="tag">a hó vége egy délelőtt, nem két nap</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="funkciok" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Funkciók</span>
+        <h2>Minden, ami egy labornak kell. Semmi, ami nem.</h2>
+      </div>
+      <p>Az egyszemélyes műhelytől a 30 fős laborig ugyanaz a rendszer — csak annyit kapcsolsz be, amennyi kell.</p>
+    </div>
+    <div class="feat-groups">
+      <div class="group io">
+        <header><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Megrendelés és kommunikáció</h3></header>
+        <details open><summary>Labor–fogorvos kommunikáció</summary><p>A megrendelés minden kapcsolódó információval együtt érkezik: vizuális segédlet, megjegyzés, fájlok. Az orvos a saját felületén követi a státuszt, így nem kell telefonálnia.</p></details>
+        <details><summary>Megrendelések menedzselése</summary><p>A megrendelés azonnal a rendszerbe kerül, nincs újabb adminisztráció. Fogszín, határidő hiányára a rendszer figyelmeztet — kötelezővé is teheted.</p></details>
+        <details><summary>Fogorvosoknak ingyenes</summary><p>Korlátlan fogorvos-felhasználó, díj nélkül. A megrendelés leadása sosem volt ilyen egyszerű.</p></details>
+        <details><summary>Képek, dokumentumok, STL-fájlok</summary><p>Bármilyen fájl csatolása a munkalaphoz mobilról vagy asztali gépről: STL, PLY, exocad tervek, cirkon-kiosztás, számlák, telefonos fotók.</p></details>
+        <details><summary>Azonnali értesítések</summary><p>Értesítés vagy e-mail a megrendelések leadásáról és minden változásáról — profilonként beállítható.</p></details>
+        <details><summary>Praxislaboroknak is</summary><p>A fogorvosi rendelők belső laborjainak adminisztrációját és adatrögzítését is támogatja.</p></details>
+      </div>
+      <div class="group io">
+        <header><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><h3>Gyártás és feladatok</h3></header>
+        <details open><summary>Megrendelés- és gyártáskövetés</summary><p>A gyártás és a logisztika teljes folyamata követhető, QR-kódokkal is. A késztermék futáros szállítása és státusza is látható, vizualizálva.</p></details>
+        <details><summary>Feladatok menedzselése</summary><p>A megrendeléshez tartozó feladatokat munkafázisokra bontva osztod ki, akár különböző munkatársaknak. A fázis termékhez rendelhető, így felvitelnél automatikusan megjelenik.</p></details>
+        <details><summary>Naptár</summary><p>Napi és heti bontásban látod a megrendeléseket és a hozzájuk tartozó időpontokat.</p></details>
+        <details><summary>Bármilyen eszközről, bárhonnan</summary><p>Böngészőből, teljes funkcionalitással: PC, laptop, tablet, okostelefon. Telepíteni nem kell semmit.</p></details>
+        <details><summary>Idővonal</summary><p>Minden módosítás időbélyeggel — a labor és az orvosi oldal is. Leadás után a munkalap nem törölhető, csak archiválható.</p></details>
+      </div>
+      <div class="group io">
+        <header><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><h3>Elszámolás és számlázás</h3></header>
+        <details open><summary>Elszámolások, számlázás</summary><p>A megrendelések részletes visszakövethetősége pontos elszámolást ad az ügyfelekkel. Pótlások, tételek, munkafázisok és kedvezmények árazása benne van; a hó végi vagy közbeni elszámolás egy gombnyomás. Igény szerint automatikus, NAV-kompatibilis e-számlázás.</p></details>
+        <details><summary>Tagbér a munkafázisokból</summary><p>Egy gombnyomásra látod, melyik kolléga milyen fázisokat végzett. A tagbér személyenként, termékenként, fázisonként vagy %-os felárral kombinálható.</p></details>
+        <details><summary>Kedvezmények kezelése</summary><p>Ügyfelenként eltérő árazás és kedvezmény — több árlista is lehet.</p></details>
+        <details><summary>Pénznemek</summary><p>Több pénznem kezelése külföldi megrendelőkhöz.</p></details>
+      </div>
+      <div class="group io">
+        <header><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Biztonság és megfelelés</h3></header>
+        <details open><summary>MDR — és a jövő</summary><p>Könnyedén megfelelsz az MDR követelményeknek, és a folyamatos fejlesztések révén a későbbi kötelezettségeknek is, költséghatékonyan. A német megrendelők elvárásainak is.</p></details>
+        <details><summary>Biztonságos</summary><p>SSL/HTTPS, rendszeres biztonsági mentés. Fix IP-címről való belépési korlátozás is beállítható.</p></details>
+        <details><summary>GDPR-kompatibilis</summary><p>Megfelel az adatfelhasználási és -kezelési szabályoknak.</p></details>
+        <details><summary>Jogosultságok</summary><p>Menedzser, laborvezető, fogtechnikus — szerepkörönként és személyenként finomítható, hogy ki mit lát (például árat, tagbért, összes munkalapot).</p></details>
+        <details><summary>Több nyelven</summary><p>Magyar és angol felület, további nyelvek hitelesített szakfordítóval.</p></details>
+        <details><summary>Egyéni szoftveres megoldások</summary><p>Ha a labornak speciális igénye van, tapasztalt fejlesztői csapat áll mögötte.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DENTIST -->
+<section class="dentist" id="fogorvos">
+  <div class="wrap">
+    <div class="io">
+      <span class="free"><i>INGYENES</i> fogorvos-felhasználó, korlátlan számban</span>
+      <span class="eyebrow">Fogorvosoknak</span>
+      <h2 style="margin-top:12px">Miért jó a fogorvosnak is?</h2>
+      <p style="margin-top:16px">A megrendelést a szoftveren keresztül adja le, minden kapcsolódó információval együtt. Ez időt spórol neki is, és átláthatóvá teszi, hol tart a munka — a félreértés még azelőtt eltűnik, hogy telefon lenne belőle.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>Két perc egy megrendelés</b> — Zsigmondy-kereszt, fogszín, fotó, megjegyzés, kész.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>Látja a státuszt</b> — gyártásban, kész, úton. Nem kell hívnia.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>Egy helyen a labor összes munkája</b> — visszakereshető, dokumentált, MDR-kompatibilis.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>Nem kell semmit telepítenie</b> — böngészőből, telefonról is megy.</span></li>
+      </ul>
+      <p style="font-size:15px;color:var(--muted)">Tipp a labornak: indulj két-három olyan fogorvossal, akivel jó a kapcsolat. A többiek munkáját te viszed fel — ugyanúgy működik.</p>
+    </div>
+    <div class="io" aria-hidden="true">
+      <div class="phone">
+        <div class="scr">
+          <div class="t">Új megrendelés</div>
+          <div class="fld">Labor<b>Nyíregyházi Fogtechnika</b></div>
+          <div class="fld">Munka<b>Cirkon korona · 26</b></div>
+          <div class="fld">Fogszín<b>A3</b></div>
+          <div class="fld">Fotó<b>2 csatolva 📎</b></div>
+          <div class="fld">Kérem<b>Szeptember 26-ra</b></div>
+          <div class="send">Megrendelés leadása</div>
+          <div class="ok">● Az előző munka: gyártásban, leadás csütörtök</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="miert">
+  <div class="wrap">
+    <div class="io">
+      <span class="eyebrow">Mitől lesz ez ennyire hatékony?</span>
+      <h2 style="margin-top:12px">Laborokkal építettük, nem laboroknak.</h2>
+      <p style="margin-top:16px">A SmileStone nem egy Excel-táblánál korlátozóbb szoftver, hanem egy gyorsabb és egyszerűbb megoldás, amely minden redundáns lépést megszüntet. A fejlesztőcsapatban fogtechnikus is dolgozik — ő is a laborból jött.</p>
+    </div>
+    <div class="why-list">
+      <div class="why-item io"><span class="k">01</span><div><h4>Semmit nem kell kétszer leírni</h4><p>A munkalapból lesz a fázis, a fázisból a tagbér, a szállítólevélből a számlázható tétel. Egy adat, egyszer.</p></div></div>
+      <div class="why-item io"><span class="k">02</span><div><h4>A meglévő folyamatra ül rá</h4><p>Fogtechnikai cégekkel együttműködve fejlesztettük, a már bevált folyamatokhoz adva szoftveres támogatást. Nem kell átszervezni a labort.</p></div></div>
+      <div class="why-item io"><span class="k">03</span><div><h4>Hat eszköz helyett egy</h4><p>Megrendelés, fizetés, számla, beosztás, fájlok, kommunikáció — nem hat különböző helyen, hanem a munkalapon.</p></div></div>
+      <div class="why-item io"><span class="k">04</span><div><h4>Az MDR nem álmatlan éjszaka</h4><p>A jogszabályi és az ügyfél által elvárt (például német) megfelelés a rendszerből jön, nem külön időből.</p></div></div>
+      <div class="why-item io"><span class="k">05</span><div><h4>Betanítás, amíg megy</h4><p>Laborra szabott betanítás: a konfigot veled együtt csináljuk, a csapatot és a megrendelő orvosokat is betanítjuk. Az első hó végi elszámolást közösen nézzük át.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="ugyfelek" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Ügyfeleink mondták</span>
+        <h2>Szkeptikus laborvezetők, egy év után.</h2>
+      </div>
+    </div>
+    <div class="quotes">
+      <blockquote class="quote io">
+        <p>Szkeptikusságom ellenére tény, hogy sokkal összeszedettebb és gyorsabb a munkavégzés, mint előtte. Átlátok mindent, ami a céggel kapcsolatos, minden nappal tudok tervezni, nem kell hazavinnem a munkát.</p>
+        <footer><span class="av">HZ</span><div><b>Hanser Zsolt</b><span>fogtechnikai cégvezető</span></div></footer>
+      </blockquote>
+      <blockquote class="quote io">
+        <p>Egy éve használjuk, tényleg a ma elérhető legjobb fogtechnikai szoftver!</p>
+        <footer><span class="av">KN</span><div><b>Kaposvári Norbert</b><span>fogtechnikai cégvezető</span></div></footer>
+      </blockquote>
+      <blockquote class="quote io">
+        <p>Fogtechnikusként lettem a fejlesztőcsapat tagja, mivel úgy látom, a fogászati szakma digitalizációja is elkerülhetetlen. Ma már én is azon dolgozom, hogy a szakmai tapasztalatom segítségével tovább fejlesszük a programot.</p>
+        <footer><span class="av">NG</span><div><b>Nyers Gábor</b><span>fogtechnikus</span></div></footer>
+      </blockquote>
+    </div>
+    <div class="cities io">Laborok az egész országból: <b>Budapest · Miskolc · Szeged · Győr · Szombathely · Nyíregyháza · Budaörs · Tököl</b></div>
+    <!-- Ügyfél-logók: engedélykérés után kerülnek be. Addig placeholder. -->
+    <div class="logo-placeholder io" aria-hidden="true">
+      <div>LOGÓ</div><div>LOGÓ</div><div>LOGÓ</div><div>LOGÓ</div><div>LOGÓ</div><div>LOGÓ</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="arak">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Árak</span>
+        <h2>Annyit fizetsz, amennyit a labor forog.</h2>
+      </div>
+      <p>Egy alapdíj, plusz megrendelésenként pár száz forint. Korlátlan felhasználó, teljes funkciókészlet — nincs csomag, nincs meglepetés.</p>
+    </div>
+    <div class="price-box io">
+      <div>
+        <h3>Hány megrendelésed van egy hónapban?</h3>
+        <div class="count"><span id="cnt">75</span><small>megrendelés / hó</small></div>
+        <div class="range-wrap"><input type="range" id="range" min="1" max="300" value="75" aria-label="Megrendelések száma havonta"></div>
+        <div class="ticks"><span>1</span><span>75</span><span>150</span><span>225</span><span>300+</span></div>
+        <div class="breakdown">
+          <div><span>Alapdíj · az első 75 megrendelés benne</span><span>25 000 Ft</span></div>
+          <div id="b2" hidden><span><span id="c2">0</span> db · 76–200 között, 300 Ft/db</span><span id="p2">0 Ft</span></div>
+          <div id="b3" hidden><span><span id="c3">0</span> db · 200 fölött, 200 Ft/db</span><span id="p3">0 Ft</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="total">
+          <div class="lbl">Havidíj</div>
+          <b id="total">25 000 Ft</b>
+          <small>+ áfa · minden hónap tényleges forgalma alapján számlázva</small>
+        </div>
+        <ul class="inc">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Korlátlan számú felhasználó — fogorvosoknak ingyen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Teljes funkciókészlet, nincs csomaghatár</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Ingyenes próba, kártyaszám nélkül</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A te visszajelzéseid alapján fejlesztjük tovább</li>
+        </ul>
+        <a class="btn btn-primary" href="https://smilestone.hu/register" style="width:100%;margin-top:22px">Kipróbálom ingyen</a>
+        <p class="price-note">Áraink nettó árak, az áfát nem tartalmazzák. Egyedi igényekre külön ajánlatot adunk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="gyik">
+  <div class="wrap">
+    <div class="sec-head io">
+      <div>
+        <span class="eyebrow">Gyakori kérdések</span>
+        <h2>Amit a demókon mindig megkérdeznek.</h2>
+      </div>
+      <p>Ha a tiéd nincs itt, írj — vagy hívj, a laborvezetők többsége telefonon dönt.</p>
+    </div>
+    <div class="faq-grid io">
+      <div>
+        <details><summary>Mennyi idő, amíg élesben használjuk?</summary><p>A beállítást (árlista, munkafázisok, megrendelő fogorvosok) mi csináljuk meg veled. Ha átküldöd az árlistát bármilyen formában és az utolsó két hét munkalapjait lefotózva, napokon belül kész rendszert kapsz, amiben már a saját munkáid vannak. A bevált út: egy megrendelővel egy hónapig 100%-ban, hó végén közös elszámolás.</p></details>
+        <details><summary>Mi lesz a papír munkalapokkal?</summary><p>Maradhatnak, amíg kell. Sok labor egy-két hónapig párhuzamosan viszi: a papírt lefotózzák és csatolják a digitális munkalaphoz. A lényeg, hogy egyszer kerüljön be az adat — onnantól minden abból számolódik.</p></details>
+        <details><summary>Kell fizetni a fogorvosoknak?</summary><p>Nem. A fogorvos-felhasználó ingyenes és korlátlan. A labor fizet, a labor forgalma alapján.</p></details>
+        <details><summary>Mi van, ha a fogorvosaim nem akarják használni?</summary><p>Akkor te viszed fel a munkájukat — ugyanúgy működik. A tapasztalat: indulj két-három olyan orvossal, akivel jó a kapcsolat; a többiek a státusz-láthatóság miatt jönnek utánuk.</p></details>
+        <details><summary>Kell hozzá telepíteni valamit?</summary><p>Nem. Böngészőből fut PC-n, laptopon, tableten és telefonon. A QR-kód a munkalapon egyből a telefonon nyitja a munkát.</p></details>
+      </div>
+      <div>
+        <details><summary>Mennyibe kerül pontosan?</summary><p>25 000 Ft + áfa havi alapdíj, amiben az első 75 megrendelés benne van; 76–200 között 300 Ft, 200 fölött 200 Ft megrendelésenként. Korlátlan felhasználó, teljes funkciókészlet. A csúszkával kiszámolod a sajátodat.</p></details>
+        <details><summary>Ki látja az árakat és a tagbért?</summary><p>Amit te beállítasz. Menedzser, laborvezető és fogtechnikus szerepkör van, személyenként felülbírálható: például a laborvezető lát minden munkalapot, de árat nem; a technikus csak a rá kiosztott munkát.</p></details>
+        <details><summary>Biztonságban vannak az adataim?</summary><p>SSL/HTTPS, rendszeres biztonsági mentés, GDPR-megfelelés. Igény szerint fix IP-címre korlátozható a belépés. Leadás után a munkalap nem törölhető, csak archiválható — minden módosítás időbélyeggel követhető.</p></details>
+        <details><summary>Segít az MDR-megfelelésben?</summary><p>Igen. A munkalap, az anyagok és a fázisok visszakövethetősége adja a dokumentációt — külön időráfordítás nélkül. A német megrendelők elvárásainak is megfelel.</p></details>
+        <details><summary>Van betanítás és support?</summary><p>Igen. Laborra szabott betanítást tartunk a csapatnak és a megrendelő orvosoknak is, és az első hó végi elszámolást közösen nézzük át. Utána telefonon és e-mailben elérsz minket.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kapcsolat">
+  <div class="wrap">
+    <div class="io">
+      <span class="eyebrow">Kezdjük el</span>
+      <h2 style="margin-top:12px">Nyitott vagy a jövőre? Válaszd ki, hogyan lépjünk tovább.</h2>
+      <div class="ways">
+        <a class="way" href="https://smilestone.hu/register"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg><div>Kipróbálom ingyen<small>Regisztrálsz, mi pedig felvesszük veled a kapcsolatot a beállításhoz.</small></div></a>
+        <a class="way" href="#form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><div>Online bemutatót kérek<small>30 perc, a te laborod példáin. Írd meg lent, mikor érsz rá.</small></div></a>
+        <a class="way" href="#form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div>Személyes konzultációt kérek<small>Kimegyünk a laborba, ha úgy egyszerűbb.</small></div></a>
+        <a class="way" href="tel:+36312008946"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg><div>+36 31 200 89 46<small>Hívj, ha gyorsabb.</small></div></a>
+      </div>
+    </div>
+    <form id="form" class="io" action="https://smilestone.hu#contact" method="post" novalidate>
+      <label>Név<input type="text" name="name" required placeholder="Hogy szólíthatunk?"></label>
+      <label>E-mail<input type="email" name="email" required placeholder="labor@pelda.hu"></label>
+      <label>Tárgy<input type="text" name="subject" required placeholder="Pl. online bemutató, kedd délután"></label>
+      <label>Üzenet<textarea name="message" required placeholder="Hány fős a labor, hány megrendelő fogorvos, mi a legnagyobb fájdalom most?"></textarea></label>
+      <button class="btn btn-primary" type="submit">Mehet</button>
+      <p class="form-note">Válaszolunk egy munkanapon belül. Az adataidat csak a kapcsolatfelvételhez használjuk.</p>
+    </form>
+  </div>
+  <div class="wrap">
+    <div class="career io" id="karrier">
+      <div>
+        <h4>Karrier: értékesítő-tanácsadó kollégát keresünk</h4>
+        <p>Olyan embert, aki elkötelezett a fogtechnikai-fogászati szakma digitalizációja mellett, és hozzánk hasonló lelkesedéssel küzd a közös célért.</p>
+      </div>
+      <a class="btn btn-ghost" href="#form">Jelentkezem</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top"><img src="assets/img/logo-white.svg" alt="SmileStone"></a>
+        <p style="font-size:14.5px;max-width:34ch">Mérföldkő a fogtechnikai laborok adminisztrációjában és a fogtechnikus–fogorvos együttműködésben.</p>
+      </div>
+      <div>
+        <h5>Termék</h5>
+        <a href="#hogyan">Hogyan működik</a><a href="#funkciok">Funkciók</a><a href="#fogorvos">Fogorvosoknak</a><a href="#arak">Árak</a>
+      </div>
+      <div>
+        <h5>Cég</h5>
+        <a href="#ugyfelek">Ügyfeleink</a><a href="#karrier">Karrier</a><a href="https://blog.smilestone.hu/hu">Blog</a><a href="https://smilestone.hu/aszf">ÁSZF</a>
+      </div>
+      <div>
+        <h5>Kapcsolat</h5>
+        <a href="tel:+36312008946">+36 31 200 89 46</a><a href="#kapcsolat">Írj nekünk</a><a href="https://www.facebook.com/smilestone.hu">Facebook</a><a href="https://www.youtube.com/channel/UCiabM_Gpeh3UR_-hmUqnzVQ">YouTube</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© SmileStone · Fogtechnikai labor-ERP</span>
+      <span>HU · <a href="en/" style="display:inline;padding:0">EN</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="https://smilestone.hu/register">Kipróbálom ingyen</a>
+  <a class="btn btn-ghost" href="tel:+36312008946" aria-label="Hívás" style="flex:0 0 52px;padding:0">📞</a>
+</div>
+
+<script>
+// nav
+const nav=document.querySelector('.nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>8),{passive:true});
+const burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
+burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.io').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+// pricing (same logic as the live site: base covers 1-75, 76-200 at 300 Ft, 200+ at 200 Ft)
+const r=document.getElementById('range');
+const fmt=n=>n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' Ft';
+function calc(){const v=+r.value;const between=Math.max(0,Math.min(v,200)-75);const over=Math.max(0,v-200);
+  document.getElementById('cnt').textContent=v>=300?'300+':v;
+  r.style.setProperty('--pct',((v-1)/299*100)+'%');
+  const b2=document.getElementById('b2'),b3=document.getElementById('b3');
+  b2.hidden=between<=0;b3.hidden=over<=0;
+  document.getElementById('c2').textContent=between;document.getElementById('p2').textContent=fmt(between*300);
+  document.getElementById('c3').textContent=over;document.getElementById('p3').textContent=fmt(over*200);
+  document.getElementById('total').textContent=fmt(25000+between*300+over*200)}
+r.addEventListener('input',calc);calc();
+// contact form (review version: opens an e-mail draft; live version posts to the smilestone.hu backend)
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);
+  if(!f.get('name')||!f.get('email')||!f.get('message')){alert('Kérlek, töltsd ki a nevet, az e-mailt és az üzenetet.');return}
+  const body=encodeURIComponent(`Név: ${f.get('name')}\nE-mail: ${f.get('email')}\n\n${f.get('message')}`);
+  location.href=`mailto:support@smilestone.hu?subject=${encodeURIComponent(f.get('subject')||'Érdeklődés — smilestone.hu')}&body=${body}`});
+</script>
+</body>
+</html>
